@@ -24,6 +24,7 @@
             @isset($removable)
                 <x-adminlte-button theme="tool" data-card-widget="remove" icon="fas fa-lg fa-times"/>
             @endisset
+            
         </div>
 
     </div>

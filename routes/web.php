@@ -30,19 +30,15 @@ Route::group(['middleware' => 'auth'], function($route){
 
     //PERFILES
         
-    Route::group(['prefix' => 'profiles'], function($route){
-        
-        Route::get('/', [App\Http\Controllers\Admin\ProfileController::class, 'index']);
-    
-        Route::get('/datatable', [App\Http\Controllers\Admin\ProfileController::class, 'datatable'])->name('profiles-datatable');
-
+    Route::group(['prefix' => 'roles'], function($route){
+        Route::get('/datatable', [App\Http\Controllers\Admin\RoleController::class, 'datatable'])->name('roles-datatable');
+        Route::get('/all-permissions', [App\Http\Controllers\Admin\RoleController::class, 'allPermissions']);
     });
     
     // USUARIOS
     Route::group(['prefix' => 'users'], function($route){
-            
-            Route::get('/', [App\Http\Controllers\Admin\UserController::class, 'index']);
-    
+        Route::get('/', [App\Http\Controllers\Admin\UserController::class, 'index']);
+        Route::get('/datatable', [App\Http\Controllers\Admin\UserController::class, 'datatable'])->name('users-datatable');
     });
      
     

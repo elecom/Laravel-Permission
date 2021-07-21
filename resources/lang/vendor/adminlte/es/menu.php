@@ -19,4 +19,5 @@ return [
     'profiles'                      => 'Perfiles',
     'users'                         => 'Usuarios',
     'user_management'               => 'Gestión de Usuarios',
+    'dashboard'                     => 'Tablero',
 ];

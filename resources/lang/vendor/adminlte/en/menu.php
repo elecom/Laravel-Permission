@@ -19,4 +19,5 @@ return [
     'profiles'                      => 'Profiles',
     'users'                         => 'Users',
     'user_management'               => 'User Management',
+    'dashboard'                     => 'Dashboard',
 ];
