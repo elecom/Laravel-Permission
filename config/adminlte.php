@@ -429,9 +429,14 @@ return [
             'active' => false,
             'files' => [
                 [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => 'vendor/sweetalert2/sweetalert2.min.css',
+                ],
+                [
                     'type' => 'js',
                     'asset' => false,
-                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
+                    'location' => 'vendor/sweetalert2/sweetalert2.min.js',
                 ],
             ],
         ],
@@ -448,6 +453,22 @@ return [
                     'asset' => false,
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
                 ],
+            ],
+        ],
+
+        'JQueryValidation' => [
+            'active' => false,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => 'vendor/jquery-validation/jquery.validate.min.js',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => 'vendor/jquery-validation/localization/messages_es.min.js',
+                ]
             ],
         ],
     ],

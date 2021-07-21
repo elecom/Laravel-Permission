@@ -66,5 +66,4 @@
         <input type="checkbox" id="checkbox_NewAdminUser" name="checkbox_NewAdminUser">
         {{ __('adminlte::adminlte.text_message_admin') }}
     </div>
-    
 </div>

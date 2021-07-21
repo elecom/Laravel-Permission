@@ -206,8 +206,8 @@
 
 @section('plugins.Sweetalert2', true)
 
-
+@section('plugins.JQueryValidation', true)
 
 @push('js')
-    <script src="{{ asset('storage/js/users.js') }}"></script>
+    <script src="{{ asset('js/users.js') }}"></script>
 @endpush
